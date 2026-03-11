@@ -1,8 +1,6 @@
+# Hydrogen Based Energy Storage System
 
-
- Hydrogen Based Energy Storage System
-
- Overview
+## Overview
 
 The **Hydrogen Based Energy Storage System** is an embedded control system designed to monitor, manage, and regulate hydrogen production and consumption in a small-scale hydrogen energy setup. The system uses an **Arduino Mega 2560** to measure electrical parameters, calculate hydrogen generation through electrolysis, estimate hydrogen consumption from the load, and automatically control the electrolysis process based on storage levels.
 
@@ -23,7 +21,7 @@ This project demonstrates the integration of **electronics, sensors, embedded pr
 
 
 
-System Architecture
+## System Architecture
 
 The firmware is organized into modular components:
 
@@ -49,7 +47,7 @@ Hydrogen Energy System
 
 ---
 
-Hardware Requirements
+## Hardware Requirements
 
 * Arduino Mega 2560
 * ACS712 Current Sensors
@@ -62,7 +60,7 @@ Hardware Requirements
 
 
 
- Software Structure
+## Software Structure
 
 The firmware consists of several files:
 
@@ -75,7 +73,7 @@ display.h / display.cpp             -> System display functions
 
 
 
-Hydrogen Production Model
+## Hydrogen Production Model
 
 Hydrogen generation is calculated using Faraday’s Law of Electrolysis.
 
@@ -99,7 +97,7 @@ The resulting hydrogen amount is converted into liters using molar volume
 
 ---
 
- Hydrogen Consumption Model
+## Hydrogen Consumption Model
 
 Hydrogen consumption is estimated using the energy demand of the connected load.
 
@@ -111,7 +109,7 @@ Hydrogen consumption is calculated using the Higher Heating Value (HHV) of hydro
 
 ---
 
-Storage Control Logic
+## Storage Control Logic
 
 The system automatically controls electrolysis using storage thresholds.
 
@@ -126,7 +124,7 @@ Unnecessary electrolysis operation
 
 
 
-EEPROM Data Storage
+## EEPROM Data Storage
 
 The hydrogen storage value is stored in EEPROM memory so that the system can restore the last known storage level after power loss.
 
@@ -148,7 +146,7 @@ Time | Electrolyzer Current | Electrolyzer Voltage | Load Current | Load Voltage
 
 
 
-Safety Considerations
+## Safety Considerations
 
 Hydrogen is a highly flammable gas. When working with hydrogen systems:
 
@@ -175,13 +173,6 @@ Possible upgrades include:
 
 
 
- Author
-
-Ephraim Baraka
-Mechatronic Engineering Technician Level 6
-Taita Taveta National Polytechnic
-
-Final Year Project:
- Dual Output Hydrogen Energy Kit
-
-
+## Contributors
+1. Ephraim Baraka - Author (Mechatronic Technician)
+2. Masika - Supervisor
